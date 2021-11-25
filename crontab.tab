@@ -1,0 +1,6 @@
+  0    0       29         2          *                            echo "event 6"
+  0    4       *          *          0                            echo "event 5"
+  0    *       *          *          *                            echo "event 4"
+  0    0       9-16      */2         * [ "$(date '+\%a')" = "1" ] && echo "event 3"
+  3    4       25-31      10         0 [ "$(date '+\%a')" = "6" ] && timedatectl set-time 03:00:00
+  0    3       25-31      3          0 [ "$(date '+\%a')" = "6" ] && timedatectl set-time 04:00:00

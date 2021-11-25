@@ -1,0 +1,13 @@
+[2021-11-25 04:07:33,084]:INFO: Start of program
+[2021-11-25 04:07:33,085]:INFO: Try for read json config file
+[2021-11-25 04:07:33,085]:DEBUG: Path to the json config file: /home/egor/cron/settings.json
+[2021-11-25 04:07:33,085]:INFO: json config file read successfully
+[2021-11-25 04:07:33,085]:INFO: Try to read crontab file
+[2021-11-25 04:07:33,087]:INFO: Crontab read successfully
+[2021-11-25 04:07:33,087]:INFO: Trying run commands
+[2021-11-25 04:07:33,090]:INFO: Successfully executed command: 'echo "event 6"'
+[2021-11-25 04:07:33,090]:INFO: Successfully executed command: 'echo "event 5"'
+[2021-11-25 04:07:33,091]:INFO: Successfully executed command: 'echo "event 4"'
+[2021-11-25 04:07:33,094]:INFO: Successfully executed command: '[ "$(date '+%a')" = "1" ] && echo "event 3"'
+[2021-11-25 04:07:33,100]:INFO: Successfully executed command: '[ "$(date '+%a')" = "6" ] && timedatectl set-time 03:00:00'
+[2021-11-25 04:07:33,127]:INFO: Successfully executed command: '[ "$(date '+%a')" = "6" ] && timedatectl set-time 04:00:00'
